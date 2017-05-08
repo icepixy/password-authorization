@@ -38,13 +38,12 @@ var Contact = React.createClass({
     
     return (
       <div id="authorization">
-        {this.state.authorized ? <h1>Contact</h1> : <h1>Enter the Password</h1>,
-        this.state.authorized ? contactInfo : login
-        }
+        <h1>{this.state.authorized ? 'Contact' : 'Enter the Password'}</h1>
+        {this.state.authorized ? contactInfo : login}
      
       </div>
     );
-  }
+  } 
 });
 
 ReactDOM.render(
